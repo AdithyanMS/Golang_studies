@@ -2,6 +2,14 @@ package main
 
 import "fmt"
 
+func show(m map[string]string) {
+	for key, value := range m {
+		fmt.Println(key, value)
+	}
+	fmt.Println("*****************************************")
+
+}
+
 func main() {
 	best := map[string]string{}
 	best["Niharuu"] = "The beeeeeeeeeest"
@@ -11,7 +19,12 @@ func main() {
 		"adi":    "games",
 		"niharu": "Civil Service",
 	}
-	fmt.Println(best)
-	fmt.Println(hobbies)
+
+	show(best)
+	show(hobbies)
+
+	for i := 0; i < 10; i++ {
+		fmt.Println(i)
+	}
 
 }
